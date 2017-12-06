@@ -1,0 +1,1 @@
+nvcc `pkg-config --cflags opencv` -L. -L/usr/local/cuda/lib -I. -I/usr/local/cuda/include -o imgread imgread.cpp `pkg-config --libs opencv` -lcuda -lcudart
